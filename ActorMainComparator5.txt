@@ -1,0 +1,42 @@
+package com.test.oops;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class ActorMainComparator5 {
+
+	public static void main(String[] args) {
+		ArrayList<Actor1> list1 = new ArrayList<Actor1>();
+		list1.add(new Actor1("Sk", 36, 7500000, 5));
+		list1.add(new Actor1("Vijay", 46, 550000000, 30));
+		list1.add(new Actor1("Rajini", 70, 1000000000, 60));
+		list1.add(new Actor1("VijaySethupathi", 43, 70000000, 11));
+		
+		System.out.println("Sorting by ActorName");
+		
+		Collections.sort(list1, new ActorNameComparator2());
+		for(Actor1 s:list1)
+		{
+			System.out.println(s.actorname+" "+s.age+" "+s.salary+" "+s.hits);
+		}
+		
+		System.out.println();
+		System.out.println("Sorting by Movie_Hits");
+		Collections.sort(list1,new ActorHitsComparator3());
+		for(Actor1 ss:list1)
+		{
+			System.out.println(ss.actorname+" "+ss.age+" "+ss.salary+" "+ss.hits);
+		}
+		
+		System.out.println();
+		System.out.println("Sorting by Salary");
+		Collections.sort(list1,new ActorSalaryComparator4());
+		for(Actor1 r:list1)
+		{
+			System.out.println(r.actorname+" "+r.age+" "+r.salary+" "+r.hits);
+		}
+	}	
+
+}
+

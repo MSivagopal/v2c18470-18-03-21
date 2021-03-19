@@ -1,0 +1,15 @@
+package com.test.oops;
+
+public class Actor1 
+{
+		String actorname;
+		int age,salary, hits;
+		public Actor1(String actorname, int age, int salary , int hits) 
+		{
+			super();
+			this.actorname = actorname;
+			this.age = age;
+			this.salary = salary;
+			this.hits = hits;
+		}
+}

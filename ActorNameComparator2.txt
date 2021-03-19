@@ -1,0 +1,11 @@
+package com.test.oops;
+import java.util.Comparator;
+
+public class ActorNameComparator2 implements Comparator {
+	public int  compare(Object o1,Object o2) 
+	{
+		Actor1 s1 = (Actor1) o1;
+		Actor1 s2 = (Actor1) o2;
+		return s1.actorname.compareTo(s2.actorname);
+	}
+}

@@ -1,0 +1,21 @@
+package com.test.oops;
+
+public class ActorStrCompare {
+
+	public static void main(String[] args) {
+		String s1 = "SK";
+		String s2 = "Bhavana";
+		String s3 = "Vijay";
+		String s4 = "VijaySethupathi";
+		int r = s3.compareTo(s4);
+		System.out.println(r);
+		if(r==0) 
+		{
+			System.out.println("String are same");
+		}
+		else 
+		{
+			System.out.println("String are not same");
+		}
+	}
+}
